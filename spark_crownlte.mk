@@ -27,7 +27,7 @@ $(call inherit-product, device/samsung/crownlte/device.mk)
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Inherit some common Spark-OS stuff
 $(call inherit-product, vendor/spark/config/common_full_phone.mk)
