@@ -34,6 +34,7 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Spark flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := true
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_NAME := spark_crownlte
