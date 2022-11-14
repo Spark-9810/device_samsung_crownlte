@@ -29,11 +29,14 @@ TARGET_SCREEN_HEIGHT := 2960
 TARGET_SCREEN_WIDTH := 1440
 TARGET_BOOT_ANIMATION_RES := 1440
 
-## Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+## Inherit some common Spark-OS stuff
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+
+# Spark flags
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 ## Device identifier, this must come after all inclusions
-PRODUCT_NAME := aosp_crownlte
+PRODUCT_NAME := spark_crownlte
 PRODUCT_DEVICE := crownlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N960F
